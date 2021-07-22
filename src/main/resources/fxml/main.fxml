@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="cn.sciuridae.controller.MainController"
-            prefHeight="800.0" prefWidth="1000.0">
-
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="900.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="cn.sciuridae.controller.MainController">
+   <children>
+      <ListView id="data_list" fx:id="data_list" layoutX="70.0" layoutY="79.0" prefHeight="132.0" prefWidth="370.0"/>
+      <Label layoutX="72.0" layoutY="46.0" prefWidth="183.0" text="数据文件路径"/>
+      <Button id="data_add" fx:id="data_add" layoutX="282.0" layoutY="42.0" mnemonicParsing="false"
+              onMouseClicked="#add_data_url" prefHeight="23.0" prefWidth="64.0" text="add"/>
+      <Button id="data_delete" fx:id="data_delete" layoutX="362.0" layoutY="42.0" mnemonicParsing="false"
+              onMouseClicked="#delete_data_url" prefHeight="23.0" prefWidth="71.0" text="delet"/>
+      <Label id="save_show" fx:id="save_show" layoutX="486.0" layoutY="79.0" prefHeight="42.0" prefWidth="462.0"/>
+      <Label layoutX="500.0" layoutY="46.0" text="保存路径"/>
+      <Button id="save_add" fx:id="save_add" layoutX="762.0" layoutY="42.0" mnemonicParsing="false"
+              onMouseClicked="#add_save_url" prefHeight="30.0" prefWidth="64.0" text="add"/>
+      <Button id="save_delete" fx:id="save_delete" layoutX="855.0" layoutY="42.0" mnemonicParsing="false"
+              onMouseClicked="#delete_save_url" text="delete"/>
+      <ListView fx:id="template_show" cache="true" layoutX="64.0" layoutY="341.0" minHeight="230.0" minWidth="422"
+                prefHeight="230.0" prefWidth="422.0"/>
+      <Label layoutX="70.0" layoutY="311.0" text="配件"/>
+      <Button id="data_add" fx:id="template_add" layoutX="323.0" layoutY="296.0" mnemonicParsing="false"
+              onMouseClicked="#add_template" prefHeight="23.0" prefWidth="64.0" text="add"/>
+      <Button id="data_delete" fx:id="template_delete" layoutX="415.0" layoutY="296.0" mnemonicParsing="false"
+              onMouseClicked="#delete_template" prefHeight="23.0" prefWidth="71.0" text="delet"/>
+      <Button id="data_delete" fx:id="ship_size_delete" layoutX="852.0" layoutY="296.0" mnemonicParsing="false"
+              onMouseClicked="#delete_ship_size" prefHeight="23.0" prefWidth="71.0" text="delet"/>
+      <Button id="data_add" fx:id="ship_size_add" layoutX="754.0" layoutY="296.0" mnemonicParsing="false"
+              onMouseClicked="#add_ship_size" prefHeight="23.0" prefWidth="64.0" text="add"/>
+      <Label layoutX="530.0" layoutY="301.0" text="船型"/>
+      <ListView fx:id="ship_size_show" cache="true" layoutX="516.0" layoutY="341.0" minHeight="230.0" minWidth="422"
+                prefHeight="230.0" prefWidth="422.0"/>
+      <ListView fx:id="design_show" cache="true" layoutX="64.0" layoutY="640.0" minHeight="230.0" minWidth="422"
+                prefHeight="230.0" prefWidth="422.0"/>
+      <Label layoutX="70.0" layoutY="613.0" text="全局船设计"/>
+      <Button id="data_add" fx:id="design_add" layoutX="314.0" layoutY="598.0" mnemonicParsing="false"
+              onMouseClicked="#add_design" prefHeight="23.0" prefWidth="64.0" text="add"/>
+      <Button id="data_delete" fx:id="design_delete" layoutX="405.0" layoutY="598.0" mnemonicParsing="false"
+              onMouseClicked="#delete_design" prefHeight="23.0" prefWidth="71.0" text="delet"/>
+      <ListView fx:id="design_show1" cache="true" layoutX="516.0" layoutY="640.0" minHeight="230.0" minWidth="422"
+                prefHeight="230.0" prefWidth="422.0"/>
+      <Label layoutX="530.0" layoutY="603.0" text="区段"/>
+      <Button id="data_add" fx:id="section_add" layoutX="762.0" layoutY="598.0" mnemonicParsing="false"
+              onMouseClicked="#add_section" prefHeight="23.0" prefWidth="64.0" text="add"/>
+      <Button id="data_delete" fx:id="section_delete" layoutX="852.0" layoutY="598.0" mnemonicParsing="false"
+              onMouseClicked="#delete_section" prefHeight="23.0" prefWidth="71.0" text="delet"/>
+   </children>
 </AnchorPane>

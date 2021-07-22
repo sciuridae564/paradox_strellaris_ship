@@ -20,7 +20,7 @@ public class MainView extends Application {
 
 
         primaryStage.setScene(main);
-        primaryStage.setHeight(800);
+        primaryStage.setHeight(1000);
         primaryStage.setWidth(1000);
         //primaryStage.setResizable(false);//不许拉伸
         primaryStage.show();

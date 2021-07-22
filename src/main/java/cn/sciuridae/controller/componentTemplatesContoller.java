@@ -1,0 +1,6 @@
+package cn.sciuridae.controller;
+
+public class componentTemplatesContoller {
+
+
+}
